@@ -1,8 +1,10 @@
 # BeamNG-DraftMod_ServerScript
 The Server Script for the Draftmod by Olrosse
 
-Make sure to set a admin in the draft_serverside\data\admins.json
+Make sure to set a admin in the draft_serverside\data\admins.json.
+
 Format is as follows, if your PlayerName is "ThisIsMe" and your other Admins "AnotherName", "YetSomeoneMore".
+
 {"admins":["ThisIsMe","AnotherName","YetSomeoneMore"]}
 
 	Commands
