@@ -55,3 +55,8 @@ Format is as follows, if your PlayerName is "ThisIsMe" and your other Admins "An
 			eg.
 				/draftmod exclude SomeonesName true
 					SomeonesName will have its draftmod disabled
+
+
+
+		/draftmod help
+			Shows the available Commands ingame
