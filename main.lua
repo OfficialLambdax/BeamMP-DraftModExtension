@@ -76,6 +76,11 @@ local excludePlayers = {}
 			eg.
 				/draftmod exclude SomeonesName true
 					SomeonesName will have its draftmod disabled
+					
+					
+					
+		/draftmod help
+			Shows the available Commands ingame
 		
 ]]--
 
@@ -263,6 +268,8 @@ function draft_onChatMessage(senderId, senderName, message)
 		message[2] = tonumber(message[2])
 		if message[2] == nil then MP.SendChatMessage(senderId, "Invalid parameter"); return 1 end
 		
+		if message[2] == 0 then MP.SendChatMessage(senderId, "0 is not a valid force mutliplier"); return 1 end
+		
 		defaultForce = message[2]
 		draft_updateclientvalues()
 		propagateMessage(senderId, "Set Force to " .. message[2])
@@ -308,6 +315,22 @@ function draft_onChatMessage(senderId, senderName, message)
 		end
 		draft_updateclientvalues()
 		
+		return 1
+		
+	elseif message[1] == "help" then
+		MP.SendChatMessage(senderId, "Sets the Update Interval")
+		MP.SendChatMessage(senderId, " /draftmod updatetimer Number")
+		MP.SendChatMessage(senderId, "Enables/Disables the draftmod for all")
+		MP.SendChatMessage(senderId, " /draftmod setstate Bool")
+		MP.SendChatMessage(senderId, "Sets the force multiplier")
+		MP.SendChatMessage(senderId, " /draftmod setforce Number")
+		MP.SendChatMessage(senderId, "Adds and Removes Admins")
+		MP.SendChatMessage(senderId, " /draftmod setadmin PlayerName Bool")
+		MP.SendChatMessage(senderId, "Excludes and reincludes Players from the draftmod")
+		MP.SendChatMessage(senderId, " /draftmod exclude PlayerName Bool")
+		
+	else
+		MP.SendChatMessage(senderId, "Unknown Command")
 		return 1
 	
 	end
