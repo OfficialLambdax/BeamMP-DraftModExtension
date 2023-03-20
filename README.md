@@ -1,5 +1,6 @@
 # BeamNG-DraftModExtension
 The Server Script for the Draftmod by Olrosse
+Link: Will be put here once the DraftMod has been released
 
 Make sure to set a admin in the draft_serverside\data\admins.json.
 
