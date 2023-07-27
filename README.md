@@ -2,7 +2,7 @@
 The Server Script for the Draftmod by Olrosse
 Link: Will be put here once the DraftMod has been released
 
-Make sure to set a admin in the draft_serverside\data\admins.json.
+Make sure to set a admin in the Data\admins.json.
 
 Format is as follows, if your PlayerName is "ThisIsMe" and your other Admins "AnotherName", "YetSomeoneMore".
 
