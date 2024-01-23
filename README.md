@@ -1,3 +1,6 @@
+# Archived
+The draft mod was supposed to be released mid 2023, but it didnt happen for to me unknown reasons. While i have access to the mod, im not the author, so its simply not on me to release it. The idea behind it was pretty cool, with its ability to cover the actual path that vehicles took so that following vehicles could profit from a draft through curves. And then the ability to bumbdraft and what not. Anyway.
+
 # BeamNG-DraftModExtension
 The Server Script for the Draftmod by Olrosse
 Link: Will be put here once the DraftMod has been released
